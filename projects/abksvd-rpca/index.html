@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABKSVD-RPCA — Ömer Kahyaoğlu</title>
+<meta name="description" content="An absorption law for forgetting subspace models, a closed-loop analysis of tracker feedback, and a pre-registered CDnet 2014 evaluation with four online RPCA baselines, shipped with a real-time operator console.">
+<meta name="author" content="Ömer Kahyaoğlu">
+<link rel="canonical" href="https://kahyaoglu20.github.io/projects/abksvd-rpca/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ABKSVD-RPCA — Ömer Kahyaoğlu">
+<meta property="og:description" content="An absorption law for forgetting subspace models, a closed-loop analysis of tracker feedback, and a pre-registered CDnet 2014 evaluation with four online RPCA baselines, shipped with a real-time operator console.">
+<meta property="og:url" content="https://kahyaoglu20.github.io/projects/abksvd-rpca/">
+<meta property="og:image" content="https://kahyaoglu20.github.io/assets/img/abksvd-rpca/console.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ömer Kahyaoğlu", "jobTitle": "Mathematical Engineering student", "url": "https://kahyaoglu20.github.io", "email": "mailto:math.kahyaoglu@gmail.com", "affiliation": {"@type": "CollegeOrUniversity", "name": "İstanbul Technical University"}, "sameAs": ["https://github.com/kahyaoglu20", "https://www.linkedin.com/in/omerkahyaoglu/", "https://www.instagram.com/omerkahyaoglu_/"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../../index.html#top" aria-label="Home">
+      <span class="mono-mark">ÖK</span>
+      <span>Ömer Kahyaoğlu<small>Mathematical Engineering · ITU</small></span>
+    </a>
+    <ul class="nav-links" id="nav-links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#research">Research</a></li><li><a href="../../index.html#projects">Projects</a></li><li><a href="../../index.html#notes">Notes</a></li><li><a href="../../index.html#cv">CV</a></li><li><a href="../../index.html#contact">Contact</a></li></ul>
+    <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="icon-btn menu-btn" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a> / <a href="../../index.html#research">Research</a> / ABKSVD-RPCA</nav>
+    <header class="p-head">
+      <div class="meta"><span class="badge preprint">Preprint · in preparation for IEEE SPL</span><span class="ctx">Independent research · 2026</span></div>
+      <h1>Absorption and Lock-In in Tracker-Guided Streaming Subspace Background Models</h1>
+      <p class="sub">Why forgetting low-rank background models swallow targets that stop, how tracker feedback prevents it, and when that feedback loop locks in its own errors.</p>
+      <div class="chips"><span class="chip">Robust PCA</span><span class="chip">Subspace tracking</span><span class="chip">Recursive least squares</span><span class="chip">Kalman filter</span><span class="chip">Computer vision</span><span class="chip">Python</span><span class="chip">MATLAB</span></div>
+      <div class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg><span><strong>Preprint, work in progress.</strong> This manuscript has not yet been peer-reviewed or reviewed by my advisor; its methods, results and wording may change. Please cite it as a preprint.</span></div>
+    </header>
+    <div class="p-hero"><img src="../../assets/img/abksvd-rpca/console.webp" alt="The operator console: live scene, confirmed tracks and model verdicts, pipeline timing and service-level ladder."></div>
+    <div class="p-body">
+      <div>
+        <section class="prose"><h2>Overview</h2><p>Streaming low-rank background models (GRASTA, ReProCS/NORST, OR-PCA, incremental PCP) must forget in order to follow illumination and scene change, and the same forgetting turns any target that stops into background. When it leaves, it leaves a ghost.</p><p>The work shows that absorption has two mechanisms: a per-pixel recursive least-squares ramp whose rate is the <strong>leverage</strong> of the current frame, independent of target size, and a size-dependent rank-crossing cascade. The resulting law predicts absorption from the background alone.</p><p>Feeding tracker beliefs back as masks prevents absorption but closes a loop that can lock in model errors. The analysis shows that an expiry clock the error can reset makes persistence exponential in the protection horizon, that the optimal horizon is a quantile of the stop-duration law, and that a budgeted semantic verifier makes the horizon non-binding.</p></section>
+        <section><h2>What I built</h2><ul class="ticks"><li><code>abksvd</code>: a modular real-time system (sensors, masked incremental SVD, detection, Kalman tracking, ONNX verifier, device profiles for Raspberry Pi 5, Jetson Orin and RK3588) with a build-free web operator console.</li><li>An evaluator that reproduces the official CDnet MATLAB confusion matrices exactly on 10 of 10 videos.</li><li>Protocols written before the runs: front end frozen on a development split, policy chosen by leave-one-video-out, five held-out categories evaluated once.</li><li>A decision log (D1–D29), an experiment registry with negative results, and two manuscripts whose every number is generated from raw results.</li></ul></section>
+        <section><h2>Results</h2><div class="table-wrap"><table><thead><tr><th>Method</th><th>IOM F (test)</th><th>Held-out F</th><th>All 11 categories</th><th>ms / frame</th></tr></thead><tbody><tr><td><strong>Verified loop V2 (ours)</strong></td><td><strong>0.614</strong></td><td><strong>0.552</strong></td><td><strong>0.603</strong></td><td>27.4</td></tr><tr><td>Loop without verifier V0 (ours)</td><td>0.445</td><td>0.526</td><td>0.558</td><td>8.3</td></tr><tr><td>No feedback (ours)</td><td>0.417</td><td>0.546</td><td>0.542</td><td>–</td></tr><tr><td>NORST</td><td>0.458</td><td>0.284</td><td>0.423</td><td>79</td></tr><tr><td>OR-PCA</td><td>0.439</td><td>0.417</td><td>0.500</td><td>2.6</td></tr><tr><td>incremental PCP</td><td>0.331</td><td>0.435</td><td>0.465</td><td>0.3</td></tr><tr><td>GRASTA</td><td>0.241</td><td>0.413</td><td>0.419</td><td>3.0</td></tr></tbody></table></div><p class="table-note">CDnet 2014, official protocol. Baselines run by me on the same frames (MATLAB, 160×120).</p></section>
+        
+        <section><h2>Figures</h2><div class="gallery"><figure class="reveal"><button type="button" data-zoom="../../assets/img/abksvd-rpca/qualitative_short.webp" data-caption="Stopped objects on CDnet 2014: without feedback they are absorbed; the verified loop keeps them." aria-label="Enlarge figure 1"><img src="../../assets/img/abksvd-rpca/qualitative_short.webp" alt="Stopped objects on CDnet 2014: without feedback they are absorbed; the verified loop keeps them." loading="lazy"></button><figcaption><b>Fig. 1</b>Stopped objects on CDnet 2014: without feedback they are absorbed; the verified loop keeps them.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/abksvd-rpca/absorption.webp" data-caption="The absorption law against the implemented estimator." aria-label="Enlarge figure 2"><img src="../../assets/img/abksvd-rpca/absorption.webp" alt="The absorption law against the implemented estimator." loading="lazy"></button><figcaption><b>Fig. 2</b>The absorption law against the implemented estimator.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/abksvd-rpca/iom_bars.webp" data-caption="Intermittent-object-motion F-measure, per video." aria-label="Enlarge figure 3"><img src="../../assets/img/abksvd-rpca/iom_bars.webp" alt="Intermittent-object-motion F-measure, per video." loading="lazy"></button><figcaption><b>Fig. 3</b>Intermittent-object-motion F-measure, per video.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/abksvd-rpca/persistence.webp" data-caption="Persistence of locked-in errors as a function of the protection horizon." aria-label="Enlarge figure 4"><img src="../../assets/img/abksvd-rpca/persistence.webp" alt="Persistence of locked-in errors as a function of the protection horizon." loading="lazy"></button><figcaption><b>Fig. 4</b>Persistence of locked-in errors as a function of the protection horizon.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/abksvd-rpca/retention.webp" data-caption="Retention of stopped foreground and ghost false positives over time." aria-label="Enlarge figure 5"><img src="../../assets/img/abksvd-rpca/retention.webp" alt="Retention of stopped foreground and ghost false positives over time." loading="lazy"></button><figcaption><b>Fig. 5</b>Retention of stopped foreground and ghost false positives over time.</figcaption></figure></div></section>
+        <section><h2>Run it</h2><pre class="code"><span class="p">$ </span>cd code/abksvd-rpca
+<span class="p">$ </span>python -m pip install -e &quot;.[all]&quot;
+<span class="p">$ </span>abksvd demo        # live console at http://127.0.0.1:8765
+<span class="p">$ </span>PYTHONPATH=src python -m pytest   # 77 tests
+</pre></section>
+        <section><h2>Cite</h2><div class="cite"><button class="copy" type="button" data-copy="bib-abksvd-rpca">Copy</button><pre class="code" id="bib-abksvd-rpca">@misc{kahyaoglu2026absorption,
+  author = {Kahyao{\u{g}}lu, {\&quot;O}mer},
+  title  = {Absorption and Lock-In in Tracker-Guided Streaming Subspace Background Models},
+  year   = {2026},
+  note   = {Preprint, in preparation},
+  url    = {https://github.com/kahyaoglu20/abksvd-rpca}
+}</pre></div></section>
+      </div>
+      <aside class="p-aside">
+        <div class="metric-list"><div><b>2 frames</b><span>median error of the absorption law (2 880 runs)</span></div><div><b>0.614</b><span>IOM F-measure of the verified loop (vs 0.445)</span></div><div><b>4</b><span>online subspace baselines on the same frames</span></div><div><b>8.3 ms</b><span>per frame on one desktop core, no verifier</span></div></div>
+        <a class="btn primary" href="https://github.com/kahyaoglu20/abksvd-rpca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> View code on GitHub</a><a class="btn" href="../../assets/papers/kahyaoglu-abksvd-letter-preprint.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg> Read the manuscript</a><a class="btn" href="../../assets/papers/kahyaoglu-abksvd-extended-preprint.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg> Extended version (31 pp.)</a>
+        
+      </aside>
+    </div>
+    <nav class="pn" aria-label="More projects"><a href="../../projects/certgen/"><span>← Previous</span><b>certgen</b></a><a class="next" href="../../projects/mth-tracker/"><span>Next →</span><b>MTH Tracker</b></a></nav>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Ömer Kahyaoğlu · İstanbul, Türkiye</span>
+    <span><a href="https://github.com/kahyaoglu20/kahyaoglu20.github.io">Site source</a> · Built by hand, hosted on GitHub Pages</span>
+  </div>
+</footer>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>certgen — Ömer Kahyaoğlu</title>
+<meta name="description" content="Two independent real samples are already at a positive W₂ distance. certgen measures this resolution floor before any model is trained and turns it into a sample-size rule, a floor-corrected skill score and a certification limit.">
+<meta name="author" content="Ömer Kahyaoğlu">
+<link rel="canonical" href="https://kahyaoglu20.github.io/projects/certgen/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="certgen — Ömer Kahyaoğlu">
+<meta property="og:description" content="Two independent real samples are already at a positive W₂ distance. certgen measures this resolution floor before any model is trained and turns it into a sample-size rule, a floor-corrected skill score and a certification limit.">
+<meta property="og:url" content="https://kahyaoglu20.github.io/projects/certgen/">
+<meta property="og:image" content="https://kahyaoglu20.github.io/assets/img/certgen/resolution_atlas.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ömer Kahyaoğlu", "jobTitle": "Mathematical Engineering student", "url": "https://kahyaoglu20.github.io", "email": "mailto:math.kahyaoglu@gmail.com", "affiliation": {"@type": "CollegeOrUniversity", "name": "İstanbul Technical University"}, "sameAs": ["https://github.com/kahyaoglu20", "https://www.linkedin.com/in/omerkahyaoglu/", "https://www.instagram.com/omerkahyaoglu_/"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../../index.html#top" aria-label="Home">
+      <span class="mono-mark">ÖK</span>
+      <span>Ömer Kahyaoğlu<small>Mathematical Engineering · ITU</small></span>
+    </a>
+    <ul class="nav-links" id="nav-links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#research">Research</a></li><li><a href="../../index.html#projects">Projects</a></li><li><a href="../../index.html#notes">Notes</a></li><li><a href="../../index.html#cv">CV</a></li><li><a href="../../index.html#contact">Contact</a></li></ul>
+    <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="icon-btn menu-btn" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a> / <a href="../../index.html#research">Research</a> / certgen</nav>
+    <header class="p-head">
+      <div class="meta"><span class="badge preprint">Preprint · in preparation for JMLR</span><span class="ctx">Graduation project · 2026</span></div>
+      <h1>How Many Samples Does a Generative Evaluation Need?</h1>
+      <p class="sub">Intrinsic dimension and the design of distributional comparisons: prospective sample-size design and floor-corrected reporting for Wasserstein evaluations of generative models.</p>
+      <div class="chips"><span class="chip">Optimal transport</span><span class="chip">Wasserstein distance</span><span class="chip">Intrinsic dimension</span><span class="chip">Power analysis</span><span class="chip">Lean 4</span><span class="chip">Python</span></div>
+      <div class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg><span><strong>Preprint, work in progress.</strong> This manuscript has not yet been peer-reviewed or reviewed by my advisor; its methods, results and wording may change. Please cite it as a preprint.</span></div>
+    </header>
+    <div class="p-hero pad"><img src="../../assets/img/certgen/resolution_atlas.webp" alt="Resolution atlas: what an evaluation can resolve at each sample size."></div>
+    <div class="p-body">
+      <div>
+        <section class="prose"><h2>Overview</h2><p>Generative models are routinely compared through the distance between a real and a synthetic sample, yet the sample size needed to resolve a difference of interest is rarely determined. This work develops a framework for <em>designing</em> such evaluations before data are collected, the way a power analysis designs an experiment.</p><p>Its central object is the <strong>resolution floor</strong>: the plug-in 2-Wasserstein distance between two disjoint real samples of equal size. It is strictly positive and decays at a rate set by the intrinsic dimension of the data, so inverting the fitted decay gives a prospective sample-size rule. Because that rule is valid only where a single power law describes the decay, the method reports the size, power and severity of a test for exactly that condition, and withholds a prescription otherwise.</p><p>The floor also yields a floor-corrected skill score, a two-sided test that exposes memorisation, a minimum detectable difference at stated error rates and an equivalence test. For latent-generative Wasserstein certificates, it determines the dimension above which no certificate of the standard form can be informative.</p></section>
+        <section><h2>What I built</h2><ul class="ticks"><li><code>certgen</code>, a Python library (NumPy and SciPy only) with a command-line interface: <code>design</code>, <code>resolve</code>, <code>evaluate</code>, <code>limit</code>.</li><li>One experiment script per measurement, each writing a JSON artifact; every number in the manuscript is computed from those artifacts.</li><li>Lean 4 proofs of the formal statements, plus a Mathlib bridge that instantiates them over the reals (Birkhoff–von Neumann reduction of the transport problem).</li><li>A test suite that checks the library, the manuscript's numbers, its references against two bibliographic indexes, its figures and the Lean build records.</li></ul></section>
+        
+        
+        <section><h2>Figures</h2><div class="gallery"><figure class="reveal"><button type="button" data-zoom="../../assets/img/certgen/floor_laws.webp" data-caption="Measured floor laws f(n) on the benchmark encodings; admissible profiles follow a single power law." aria-label="Enlarge figure 1"><img src="../../assets/img/certgen/floor_laws.webp" alt="Measured floor laws f(n) on the benchmark encodings; admissible profiles follow a single power law." loading="lazy"></button><figcaption><b>Fig. 1</b>Measured floor laws f(n) on the benchmark encodings; admissible profiles follow a single power law.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/certgen/reference_tables.webp" data-caption="Reference tables r(d, N) behind the certification limit." aria-label="Enlarge figure 2"><img src="../../assets/img/certgen/reference_tables.webp" alt="Reference tables r(d, N) behind the certification limit." loading="lazy"></button><figcaption><b>Fig. 2</b>Reference tables r(d, N) behind the certification limit.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/certgen/curvature_test.webp" data-caption="Size and power of the curvature test for a single exponent." aria-label="Enlarge figure 3"><img src="../../assets/img/certgen/curvature_test.webp" alt="Size and power of the curvature test for a single exponent." loading="lazy"></button><figcaption><b>Fig. 3</b>Size and power of the curvature test for a single exponent.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/certgen/plan_pullback.webp" data-caption="The plan-pullback bound against the exact distance on trained decoders." aria-label="Enlarge figure 4"><img src="../../assets/img/certgen/plan_pullback.webp" alt="The plan-pullback bound against the exact distance on trained decoders." loading="lazy"></button><figcaption><b>Fig. 4</b>The plan-pullback bound against the exact distance on trained decoders.</figcaption></figure></div></section>
+        <section><h2>Run it</h2><pre class="code"><span class="p">$ </span>pip install -e .
+<span class="p">$ </span>certgen design real.csv --target 0.05 --severity
+<span class="p">$ </span>certgen evaluate real.csv generated.csv
+<span class="p">$ </span>certgen limit 4096 --dhat 12.3
+</pre></section>
+        <section><h2>Cite</h2><div class="cite"><button class="copy" type="button" data-copy="bib-certgen">Copy</button><pre class="code" id="bib-certgen">@misc{kahyaoglu2026certgen,
+  author = {Kahyao{\u{g}}lu, {\&quot;O}mer},
+  title  = {How Many Samples Does a Generative Evaluation Need? Intrinsic Dimension and the Design of Distributional Comparisons},
+  year   = {2026},
+  note   = {Preprint, in preparation},
+  url    = {https://github.com/kahyaoglu20/certgen}
+}</pre></div></section>
+      </div>
+      <aside class="p-aside">
+        <div class="metric-list"><div><b>≤ 1.15×</b><span>plan-pullback bound vs exact W₂ on trained decoders</span></div><div><b>12–120×</b><span>over-estimate of spectral-norm certificates</span></div><div><b>32 768</b><span>largest sample size of the reference tables</span></div><div><b>8</b><span>tabular benchmark encodings studied</span></div></div>
+        <a class="btn primary" href="https://github.com/kahyaoglu20/certgen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> View code on GitHub</a><a class="btn" href="../../assets/papers/kahyaoglu-certgen-preprint.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg> Read the manuscript</a>
+        
+      </aside>
+    </div>
+    <nav class="pn" aria-label="More projects"><a href="../../index.html#research"><span>← Back</span><b>All work</b></a><a class="next" href="../../projects/abksvd-rpca/"><span>Next →</span><b>ABKSVD-RPCA</b></a></nav>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Ömer Kahyaoğlu · İstanbul, Türkiye</span>
+    <span><a href="https://github.com/kahyaoglu20/kahyaoglu20.github.io">Site source</a> · Built by hand, hosted on GitHub Pages</span>
+  </div>
+</footer>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>
