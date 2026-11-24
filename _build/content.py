@@ -295,8 +295,8 @@ PROJECTS = [
         "short": "hinote2pdf",
         "subtitle": ("An open-source converter that turns Huawei Notes .hinote files into PDFs whose "
                      "ink is pure vector geometry: sharp at any zoom, faithful to pen pressure, "
-                     "colour and translucency, with imported PDF pages kept selectable."),
-        "status": ("released", "Released · v1.0.0 · open source"),
+                     "colour and translucency, on top of your imported PDFs and books or on its own."),
+        "status": ("released", "Released · v1.1.0 · open source"),
         "context": "Open-source tool · Nov 2026",
         "repo": f"{GITHUB}/hinote2pdf",
         "pdf": "assets/papers/hinote2pdf-sample.pdf",
@@ -304,12 +304,12 @@ PROJECTS = [
         "pdf_cta": "Open the sample PDF",
         "cover": "hinote2pdf/cover.webp",
         "card": ("Wrote your notes with an M-Pencil on a MatePad? hinote2pdf converts Huawei Notes "
-                 "files into PDFs whose handwriting stays razor-sharp at any zoom, with pen "
-                 "pressure, highlighters and annotated PDFs intact. Free, offline, drag and drop."),
+                 "files into PDFs whose handwriting stays razor-sharp at any zoom, with or without "
+                 "the imported PDF or book page, lossless or 4× smaller. Free, offline, drag and drop."),
         "metrics": [
             ("100 %", "vector ink: no stroke is ever rasterised"),
-            ("89–93 %", "match with the note's own page previews (real 15-page note)"),
-            ("≈ 2 µm", "worst-case outline error on an A4 page"),
+            ("34 → 7.9 MB", "a real 15-page note, lossless → HQ lossy"),
+            ("89–93 %", "match with the note's own page previews (--weight 1.3)"),
             ("0 uploads", "runs offline; notes are only read"),
         ],
         "tags": ["PDF", "Vector graphics", "Handwriting", "Huawei Notes", "Open source", "Python"],
@@ -324,31 +324,39 @@ PROJECTS = [
             "Translucent pens are built up stamp by stamp inside exact radial soft masks, so "
             "overlaps darken as they do on the tablet; highlighters are painted once per stroke "
             "and stay see-through; eraser cuts fall exactly where they were made.",
-            "Notes written on imported PDFs keep that PDF as it is, embedded under the ink, so "
-            "slides and papers stay selectable and searchable. The converter also checks its own "
-            "work: <code>--verify</code> renders every page and scores it against the preview "
-            "stored in the note. It runs entirely offline and never modifies a note.",
+            "Notes written on imported PDFs and books keep those pages, embedded unchanged under "
+            "the ink, so their text stays selectable and searchable; or the ink is exported on "
+            "its own. Output is lossless, or HQ lossy: still vector, about four times smaller. "
+            "Dropping notes on the Windows launcher opens a small window with these choices.",
         ],
         "built": [
             "A small Python package (pypdf only) with a command-line interface, a Windows "
-            "drag-and-drop launcher and a file-picker mode for whole folders of notes.",
+            "drag-and-drop launcher and an options window: background on or off, lossless or HQ "
+            "lossy, editable ink, bolder thin pens.",
             "A PDF writer that emits strokes as round-capped constant-width runs within about "
-            "2 µm of the exact outline on A4, optional editable ink annotations, and "
-            "toggleable layers for handwriting and highlighter.",
+            "2 µm of the exact outline on A4 (about 10 µm in HQ mode), optional editable ink "
+            "annotations, and toggleable layers for handwriting and highlighter.",
             "Exact soft-edged translucency: per-stamp radial shadings multiplied inside "
             "luminosity soft masks, so the accumulated alpha 1 − ∏(1 − a·T(r)) is evaluated "
             "per pixel at any zoom.",
-            "A self-check against the note's own page previews (89–93 % on a real 15-page note "
-            "with <code>--weight 1.3</code>), unit tests and a sample note to try without a tablet.",
+            "Book-friendly backgrounds: each imported page is copied with only the fonts and "
+            "images its content uses, so ten annotated pages of a 150-page book come to 2.4 MB "
+            "instead of 29 MB.",
+            "A self-check against the note's own page previews, tested on a real 15-page "
+            "handwritten note, plus unit tests and a sample note to try without a tablet.",
         ],
-        "gallery_lead": "Sample output",
+        "gallery_lead": "Real notes and sample output",
         "figures": [
-            ("hinote2pdf/cover.webp", "A converted page next to a 1080 px image of the same page, both at 7× zoom."),
-            ("hinote2pdf/page1.webp", "An annotated lecture PDF: the typeset page stays selectable, the pen, highlighter and sketch are vector ink."),
-            ("hinote2pdf/page2.webp", "A blank-paper page: pressure-sensitive pen, a marker underline, a highlighter and translucent ink."),
+            ("hinote2pdf/cover.webp", "A real handwritten page next to a 1080 px image of it, both at 7× zoom."),
+            ("hinote2pdf/real_page12.webp", "A page of real continuum mechanics notes (Sürekli Ortamlar), converted with default settings."),
+            ("hinote2pdf/pages.webp", "Four more pages of the same note: colours, boxes, tables and arrows stay exact."),
+            ("hinote2pdf/background.webp", "With or without background: the same annotated lecture PDF exported both ways."),
+            ("hinote2pdf/quality.webp", "Lossless and HQ lossy at 11× zoom: the whole 15-page note goes from 34 MB to 7.9 MB."),
+            ("hinote2pdf/dialog.webp", "The options window that opens when notes are dropped on hinote2pdf.bat."),
             ("hinote2pdf/zoom_translucent.webp", "Translucent ink at 12× zoom: overlaps build up exactly, with soft edges, as vectors."),
         ],
         "code": ("pip install git+https://github.com/kahyaoglu20/hinote2pdf\nhinote2pdf \"my note.hinote\"\n"
+                 "hinote2pdf \"my note.hinote\" --quality hq --no-background\n"
                  "hinote2pdf notes/ -o pdfs/ --annotations\nhinote2pdf \"my note.hinote\" --verify --weight 1.3"),
     },
     {
