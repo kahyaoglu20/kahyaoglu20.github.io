@@ -127,7 +127,7 @@ def link_buttons(p, base: str, small=True, primary_page=True) -> str:
     if primary_page:
         out.append(f'<a class="btn primary{sm}" href="{base}projects/{p["slug"]}/">Read more {icon("arrow")}</a>')
     out.append(f'<a class="btn{sm}" href="{p["repo"]}">{icon("github")} Code</a>')
-    label = "Manuscript" if p["kind"] == "research" else "Report"
+    label = p.get("pdf_label") or ("Manuscript" if p["kind"] == "research" else "Report")
     out.append(f'<a class="btn{sm}" href="{base}{p["pdf"]}">{icon("file")} {label}</a>')
     if "live" in p:
         out.append(f'<a class="btn{sm}" href="{base}{p["live"][1]}">{icon("play")} {esc(p["live"][0].replace("Open the ", "").capitalize())}</a>')
@@ -301,7 +301,7 @@ def home() -> str:
       <div class="section-head">
         <div class="num"><b>03</b> / Projects</div>
         <div><h2>Projects and course work</h2>
-        <p>Software I designed, tested and documented: estimation and tracking, a GPT built from first principles, and a controlled study of class imbalance.</p></div>
+        <p>Software I designed, tested and documented: estimation and tracking, an open-source converter for Huawei Notes handwriting, a GPT built from first principles, and a controlled study of class imbalance.</p></div>
       </div>
       {feat}
       <div class="cards">{cards}</div>
@@ -382,7 +382,7 @@ def project(p, prev, nxt) -> str:
     hero_cls = "p-hero" if hero_src in dark_shots else "p-hero pad"
 
     aside_btns = [f'<a class="btn primary" href="{p["repo"]}">{icon("github")} View code on GitHub</a>',
-                  f'<a class="btn" href="{b}{p["pdf"]}">{icon("file")} {"Read the manuscript" if p["kind"] == "research" else "Read the report"}</a>']
+                  f'<a class="btn" href="{b}{p["pdf"]}">{icon("file")} {p.get("pdf_cta") or ("Read the manuscript" if p["kind"] == "research" else "Read the report")}</a>']
     if "pdf2" in p:
         aside_btns.append(f'<a class="btn" href="{b}{p["pdf2"][1]}">{icon("file")} {esc(p["pdf2"][0])}</a>')
     if "live" in p:

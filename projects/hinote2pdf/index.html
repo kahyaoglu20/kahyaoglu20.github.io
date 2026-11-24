@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hinote2pdf — Ömer Kahyaoğlu</title>
+<meta name="description" content="Wrote your notes with an M-Pencil on a MatePad? hinote2pdf converts Huawei Notes files into PDFs whose handwriting stays razor-sharp at any zoom, with pen pressure, highlighters and annotated PDFs intact. Free, offline, drag and drop.">
+<meta name="author" content="Ömer Kahyaoğlu">
+<link rel="canonical" href="https://kahyaoglu20.github.io/projects/hinote2pdf/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="hinote2pdf — Ömer Kahyaoğlu">
+<meta property="og:description" content="Wrote your notes with an M-Pencil on a MatePad? hinote2pdf converts Huawei Notes files into PDFs whose handwriting stays razor-sharp at any zoom, with pen pressure, highlighters and annotated PDFs intact. Free, offline, drag and drop.">
+<meta property="og:url" content="https://kahyaoglu20.github.io/projects/hinote2pdf/">
+<meta property="og:image" content="https://kahyaoglu20.github.io/assets/img/hinote2pdf/cover.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f8f7f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0e12" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Ömer Kahyaoğlu", "jobTitle": "Mathematical Engineering student", "url": "https://kahyaoglu20.github.io", "email": "mailto:math.kahyaoglu@gmail.com", "affiliation": {"@type": "CollegeOrUniversity", "name": "İstanbul Technical University"}, "sameAs": ["https://github.com/kahyaoglu20", "https://www.linkedin.com/in/omerkahyaoglu/", "https://www.instagram.com/omerkahyaoglu_/"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../../index.html#top" aria-label="Home">
+      <span class="mono-mark">ÖK</span>
+      <span>Ömer Kahyaoğlu<small>Mathematical Engineering · ITU</small></span>
+    </a>
+    <ul class="nav-links" id="nav-links"><li><a href="../../index.html#about">About</a></li><li><a href="../../index.html#research">Research</a></li><li><a href="../../index.html#projects">Projects</a></li><li><a href="../../index.html#notes">Notes</a></li><li><a href="../../index.html#cv">CV</a></li><li><a href="../../index.html#contact">Contact</a></li></ul>
+    <button class="icon-btn theme-btn" type="button" aria-label="Toggle dark mode"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    <button class="icon-btn menu-btn" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a> / <a href="../../index.html#projects">Projects</a> / hinote2pdf</nav>
+    <header class="p-head">
+      <div class="meta"><span class="badge released">Released · v1.0.0 · open source</span><span class="ctx">Open-source tool · Nov 2026</span></div>
+      <h1>hinote2pdf: Huawei Notes handwriting to lossless vector PDF</h1>
+      <p class="sub">An open-source converter that turns Huawei Notes .hinote files into PDFs whose ink is pure vector geometry: sharp at any zoom, faithful to pen pressure, colour and translucency, with imported PDF pages kept selectable.</p>
+      <div class="chips"><span class="chip">PDF</span><span class="chip">Vector graphics</span><span class="chip">Handwriting</span><span class="chip">Huawei Notes</span><span class="chip">Open source</span><span class="chip">Python</span></div>
+      
+    </header>
+    <div class="p-hero pad"><img src="../../assets/img/hinote2pdf/cover.webp" alt="A converted page next to a 1080 px image of the same page, both at 7× zoom."></div>
+    <div class="p-body">
+      <div>
+        <section class="prose"><h2>Overview</h2><p>Huawei Notes on MatePad tablets and Huawei phones keeps handwriting as strokes in its own <code>.hinote</code> files. Taking those notes anywhere else usually means pictures of the pages, which blur when you zoom in and print poorly. <strong>hinote2pdf</strong> converts <code>.hinote</code> files into PDFs whose ink is vector geometry, so a page is exact at 100 % and at 6400 %.</p><p>Each stroke is rebuilt from its recorded pen samples: a smooth curve through every point, a width that follows pen pressure and the tip of the pen that drew it. Translucent pens are built up stamp by stamp inside exact radial soft masks, so overlaps darken as they do on the tablet; highlighters are painted once per stroke and stay see-through; eraser cuts fall exactly where they were made.</p><p>Notes written on imported PDFs keep that PDF as it is, embedded under the ink, so slides and papers stay selectable and searchable. The converter also checks its own work: <code>--verify</code> renders every page and scores it against the preview stored in the note. It runs entirely offline and never modifies a note.</p></section>
+        <section><h2>What I built</h2><ul class="ticks"><li>A small Python package (pypdf only) with a command-line interface, a Windows drag-and-drop launcher and a file-picker mode for whole folders of notes.</li><li>A PDF writer that emits strokes as round-capped constant-width runs within about 2 µm of the exact outline on A4, optional editable ink annotations, and toggleable layers for handwriting and highlighter.</li><li>Exact soft-edged translucency: per-stamp radial shadings multiplied inside luminosity soft masks, so the accumulated alpha 1 − ∏(1 − a·T(r)) is evaluated per pixel at any zoom.</li><li>A self-check against the note's own page previews (89–93 % on a real 15-page note with <code>--weight 1.3</code>), unit tests and a sample note to try without a tablet.</li></ul></section>
+        
+        
+        <section><h2>Sample output</h2><div class="gallery"><figure class="reveal"><button type="button" data-zoom="../../assets/img/hinote2pdf/page1.webp" data-caption="An annotated lecture PDF: the typeset page stays selectable, the pen, highlighter and sketch are vector ink." aria-label="Enlarge figure 1"><img src="../../assets/img/hinote2pdf/page1.webp" alt="An annotated lecture PDF: the typeset page stays selectable, the pen, highlighter and sketch are vector ink." loading="lazy"></button><figcaption><b>Fig. 1</b>An annotated lecture PDF: the typeset page stays selectable, the pen, highlighter and sketch are vector ink.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/hinote2pdf/page2.webp" data-caption="A blank-paper page: pressure-sensitive pen, a marker underline, a highlighter and translucent ink." aria-label="Enlarge figure 2"><img src="../../assets/img/hinote2pdf/page2.webp" alt="A blank-paper page: pressure-sensitive pen, a marker underline, a highlighter and translucent ink." loading="lazy"></button><figcaption><b>Fig. 2</b>A blank-paper page: pressure-sensitive pen, a marker underline, a highlighter and translucent ink.</figcaption></figure><figure class="reveal"><button type="button" data-zoom="../../assets/img/hinote2pdf/zoom_translucent.webp" data-caption="Translucent ink at 12× zoom: overlaps build up exactly, with soft edges, as vectors." aria-label="Enlarge figure 3"><img src="../../assets/img/hinote2pdf/zoom_translucent.webp" alt="Translucent ink at 12× zoom: overlaps build up exactly, with soft edges, as vectors." loading="lazy"></button><figcaption><b>Fig. 3</b>Translucent ink at 12× zoom: overlaps build up exactly, with soft edges, as vectors.</figcaption></figure></div></section>
+        <section><h2>Run it</h2><pre class="code"><span class="p">$ </span>pip install git+https://github.com/kahyaoglu20/hinote2pdf
+<span class="p">$ </span>hinote2pdf &quot;my note.hinote&quot;
+<span class="p">$ </span>hinote2pdf notes/ -o pdfs/ --annotations
+<span class="p">$ </span>hinote2pdf &quot;my note.hinote&quot; --verify --weight 1.3
+</pre></section>
+        
+      </div>
+      <aside class="p-aside">
+        <div class="metric-list"><div><b>100 %</b><span>vector ink: no stroke is ever rasterised</span></div><div><b>89–93 %</b><span>match with the note&#x27;s own page previews (real 15-page note)</span></div><div><b>≈ 2 µm</b><span>worst-case outline error on an A4 page</span></div><div><b>0 uploads</b><span>runs offline; notes are only read</span></div></div>
+        <a class="btn primary" href="https://github.com/kahyaoglu20/hinote2pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> View code on GitHub</a><a class="btn" href="../../assets/papers/hinote2pdf-sample.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg> Open the sample PDF</a>
+        
+      </aside>
+    </div>
+    <nav class="pn" aria-label="More projects"><a href="../../projects/mth-tracker/"><span>← Previous</span><b>MTH Tracker</b></a><a class="next" href="../../projects/char-gpt/"><span>Next →</span><b>Character GPT</b></a></nav>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Ömer Kahyaoğlu · İstanbul, Türkiye</span>
+    <span><a href="https://github.com/kahyaoglu20/kahyaoglu20.github.io">Site source</a> · Built by hand, hosted on GitHub Pages</span>
+  </div>
+</footer>
+<script src="../../assets/js/site.js" defer></script>
+</body>
+</html>
